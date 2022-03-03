@@ -18,7 +18,7 @@
         Annually
       </div>
       <div class="toggle__btn">
-        <span class="toggle__mover toggle__mover--right"></span>
+        <span class="toggle__mover toggle__mover--monthly"></span>
       </div>
       <div class="toggle__choice">
         Monthly
@@ -30,7 +30,7 @@
     <div class="card-container">
       <div class="card">
         <h2 class="card__title">Basic</h2>
-        <p class="card__price">$19.99</p>
+        <p class="card__price">$<span id="basic">---</span></p>
 
         <ul class="card__features">
           <li>500 GB Storage</li>
@@ -43,7 +43,7 @@
 
       <div class="card">
         <h2 class="card__title">Professional</h2>
-        <p class="card__price">$24.99</p>
+        <p class="card__price">$<span id="professional">---</span></p>
 
         <ul class="card__features">
           <li>1 TB Storage</li>
@@ -56,7 +56,7 @@
 
       <div class="card">
         <h2 class="card__title">Master</h2>
-        <p class="card__price">$39.99</p>
+        <p class="card__price">$<span id="master">---</span></p>
 
         <ul class="card__features">
           <li>2 TB Storage</li>
@@ -68,5 +68,7 @@
       </div>
     </div>
   </main>
+
+  <script src="public/js/index.js"></script>
 </body>
 </html>
