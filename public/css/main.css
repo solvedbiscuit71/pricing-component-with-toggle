@@ -7,13 +7,14 @@
 
 :root {
   font-size: 15px;
+  background-color: #f6f6fe;
+  background-image: url("../../images/bg-top.svg"), url("../../images/bg-bottom.svg");
+  background-position: top -5em right -12em, bottom left -5em;
+  background-repeat: no-repeat, no-repeat;
 }
 
 body {
   margin: 0;
-  background-image: url("../../images/bg-top.svg"), url("../../images/bg-bottom.svg");
-  background-position: top -5em right -12em, bottom left -5em;
-  background-repeat: no-repeat, no-repeat;
 }
 
 header {
@@ -35,7 +36,7 @@ header .toggle__choice {
   color: #b3b5c6;
 }
 header .toggle__btn {
-  width: 4em;
+  width: 3.5em;
   height: 2em;
   background: linear-gradient(90deg, #a3a8f0, #696fdd);
   border-radius: 2em;
@@ -68,7 +69,7 @@ main {
 main .card {
   padding: 2em;
   background-color: white;
-  box-shadow: 0px 0px 5px 0px rgba(197, 197, 232, 0.5);
+  box-shadow: 0px 0px 3px 0px rgba(197, 197, 232, 0.3);
   border-radius: 0.5em;
 }
 main .card-container {
@@ -140,6 +141,36 @@ main .card:nth-child(2) .card__btn:hover {
   cursor: pointer;
   color: white;
   border: 1px solid white;
+}
+
+/***** media query ******/
+@media only screen and (min-width: 1200px) {
+  :root {
+    background-position: top right, bottom left;
+    height: 100vh;
+  }
+
+  main .card {
+    position: relative;
+    z-index: 3;
+  }
+  main .card-container {
+    grid-template-columns: repeat(3, 320px);
+    gap: 0;
+    align-items: center;
+  }
+  main .card:nth-child(1) {
+    padding-right: 4em;
+    left: 2em;
+  }
+  main .card:nth-child(2) {
+    z-index: 5;
+    height: 95%;
+  }
+  main .card:nth-child(3) {
+    padding-left: 4em;
+    right: 2em;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
