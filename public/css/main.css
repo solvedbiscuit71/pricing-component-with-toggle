@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+/****** Color Palette *******/
+*, *::before, *::after {
+  box-sizing: inherit;
+  font-family: "Montserrat";
+}
+
+:root {
+  font-size: 15px;
+}
+
+body {
+  margin: 0;
+  background-image: url("../../images/bg-top.svg"), url("../../images/bg-bottom.svg");
+  background-position: top -5em right -12em, bottom left -5em;
+  background-repeat: no-repeat, no-repeat;
+}
+
+header {
+  margin-block: 4em;
+}
+header h1 {
+  color: #6d708d;
+  text-align: center;
+}
+header .toggle {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+}
+header .toggle__choice {
+  color: #b3b5c6;
+}
+header .toggle__btn {
+  width: 4em;
+  height: 2em;
+  background: linear-gradient(90deg, #a3a8f0, #696fdd);
+  border-radius: 2em;
+  position: relative;
+}
+header .toggle__btn:hover {
+  background: #c5c8f3;
+  cursor: pointer;
+}
+header .toggle__mover {
+  display: inline-block;
+  padding: 0.8em;
+  background-color: white;
+  border-radius: 50%;
+}
+header .toggle__mover--left {
+  position: absolute;
+  top: 0.2em;
+  left: 0.25em;
+}
+header .toggle__mover--right {
+  position: absolute;
+  top: 0.2em;
+  right: 0.25em;
+}
+
+main {
+  margin-bottom: 4em;
+}
+main .card {
+  padding: 2em;
+  background-color: white;
+  box-shadow: 0px 0px 5px 0px rgba(197, 197, 232, 0.5);
+  border-radius: 0.5em;
+}
+main .card-container {
+  display: grid;
+  grid-template-columns: 315px;
+  place-content: center;
+  gap: 2em;
+}
+main .card__title {
+  color: #6d708d;
+  font-size: 1rem;
+  text-align: center;
+}
+main .card__price {
+  margin: 0;
+  color: #494c5f;
+  font-size: 4rem;
+  text-align: center;
+}
+main .card__features {
+  list-style: none;
+  padding: 0;
+  margin-block: 2em;
+  border-block: 0.5px solid #e4e4e4;
+}
+main .card__features li {
+  padding: 1em;
+  border-block: 0.5px solid #e4e4e4;
+  color: #6d708d;
+  text-align: center;
+}
+main .card__btn {
+  padding: 1em;
+  color: white;
+  text-align: center;
+  background: linear-gradient(90deg, #a3a8f0, #696fdd);
+  border: 1px solid white;
+  border-radius: 0.5em;
+}
+main .card__btn:hover {
+  border: 1px solid #7578e0;
+  color: #7578e0;
+  cursor: pointer;
+  background: white;
+}
+main .card:nth-child(2) {
+  background: linear-gradient(180deg, #a3a8f0, #696fdd);
+}
+main .card:nth-child(2) .card__title {
+  color: white;
+}
+main .card:nth-child(2) .card__price {
+  color: white;
+}
+main .card:nth-child(2) .card__features {
+  border-block: 0.5px solid white;
+}
+main .card:nth-child(2) .card__features li {
+  border-block: 0.5px solid white;
+  color: white;
+}
+main .card:nth-child(2) .card__btn {
+  background: white;
+  color: #7578e0;
+  border: 1px solid #6f73e0;
+}
+main .card:nth-child(2) .card__btn:hover {
+  background: #6f73e0;
+  cursor: pointer;
+  color: white;
+  border: 1px solid white;
+}
+
+/*# sourceMappingURL=main.css.map */
